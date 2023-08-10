@@ -16,7 +16,7 @@ In this dataset, you are presented pairs of phrases (an <code>anchor</code> and 
 Submissions are evaluated on the **Pearson correlation coefficient** between the predicted and actual similarity scores.  
 
 ### Result
-|model| validation strategy| Loss| Tricks| cv-score | public-score |private-score|
+|Model| Validation strategy| Loss| Tricks| CV-score | Public-score |Private-score|
 |---|---|---|---|---|---|---|
 |xxx|xxx|xxx|xxx|xxx|xxx|xxx|
 |xxx|xxx|xxx|xxx|xxx|xxx|xxx|

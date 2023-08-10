@@ -22,8 +22,8 @@ Submissions are evaluated on the **Pearson correlation coefficient** between the
 |BERT-base  |StratifiedGroupKFold   |MSELoss    |xxx|xxx|xxx|xxx|
 |BERT-base  |StratifiedGroupKFold   |PCLoss     |xxx|xxx|xxx |xxx|
 |BERT-base  |StratifiedGroupKFold   |PCLoss     |LLRD|xxx|xxx |xxx|
-|BERT-base  |StratifiedGroupKFold   |PCLoss     |LLRD + LSTM header|xxx|xxx |xxx|
+|BERT-base  |StratifiedGroupKFold   |PCLoss     |LLRD + <br />LSTM header|xxx|xxx |xxx|
 
-MSELoss =   Mean Squared Error Loss
-PCLoss  =   Pearson Correlation Loss
-LLRD    =   Layer-wise Learning Rate Decay
+MSELoss =   Mean Squared Error Loss  
+PCLoss  =   Pearson Correlation Loss  
+LLRD    =   Layer-wise Learning Rate Decay  

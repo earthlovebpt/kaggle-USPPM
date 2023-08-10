@@ -18,7 +18,12 @@ Submissions are evaluated on the **Pearson correlation coefficient** between the
 ### Result
 |Model| Validation strategy| Loss| Tricks| CV-score | Public-score |Private-score|
 |---|---|---|---|---|---|---|
-|xxx|xxx|xxx|xxx|xxx|xxx|xxx|
-|xxx|xxx|xxx|xxx|xxx|xxx|xxx|
-|xxx|xxx|xxx|xxx|xxx|xxx|xxx|
+|BERT-base  |StratifiedKFold        |MSELoss    |xxx|xxx|xxx|xxx|
+|BERT-base  |StratifiedGroupKFold   |MSELoss    |xxx|xxx|xxx|xxx|
+|BERT-base  |StratifiedGroupKFold   |PCLoss     |xxx|xxx|xxx |xxx|
+|BERT-base  |StratifiedGroupKFold   |PCLoss     |LLRD|xxx|xxx |xxx|
+|BERT-base  |StratifiedGroupKFold   |PCLoss     |LLRD + LSTM header|xxx|xxx |xxx|
 
+MSELoss =   Mean Squared Error Loss
+PCLoss  =   Pearson Correlation Loss
+LLRD    =   Layer-wise Learning Rate Decay

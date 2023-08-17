@@ -17,13 +17,13 @@ Submissions are evaluated on the **Pearson correlation coefficient** between the
 
 ### Result
 |Model| Validation strategy| Loss| Tricks| CV-score | Public-score |Private-score|
-|---|---|---|---|---|---|---|
-|BERT-base  |StratifiedKFold        |MSELoss    |xxx|xxx|xxx|xxx|
-|BERT-base  |StratifiedGroupKFold   |MSELoss    |xxx|xxx|xxx|xxx|
-|BERT-base  |StratifiedGroupKFold   |PCLoss     |xxx|xxx|xxx |xxx|
-|BERT-base  |StratifiedGroupKFold   |PCLoss     |LLRD|xxx|xxx |xxx|
-|BERT-base  |StratifiedGroupKFold   |PCLoss     |LLRD + <br />LSTM header|xxx|xxx |xxx|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|BERT-base  |StratifiedKFold                |MSELoss    |-      |0.792|0.743|0.754|
+|BERT-base  |StratifiedGroupKFold           |MSELoss    |-      |0.734|0.746|0.757|
+|BERT-base  |StratifiedGroupKFold           |CorrLoss   |-      |0.728|0.740|0.753|
+|DeBERTa-v3-large  |StratifiedGroupKFold    |MSELoss    |-      |0.822|0.836|0.852|
+|DeBERTa-v3-large  |StratifiedGroupKFold    |MSELoss    |LLRD   |0.826|0.837 |0.852|
 
-MSELoss =   Mean Squared Error Loss  
-PCLoss  =   Pearson Correlation Loss  
-LLRD    =   Layer-wise Learning Rate Decay  
+MSELoss     =   Mean Squared Error Loss  
+CorrLoss    =   Correlational Coefficience Loss  
+LLRD        =   Layer-wise Learning Rate Decay  
